@@ -1,13 +1,13 @@
+import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
 
-export default function HomeScreen() {
-  const version = Constants.expoConfig?.version || '1.0.0';
-
+export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>CompraJa</Text>
-      <Text style={styles.version}>Version {version}</Text>
+      <Text style={styles.version}>Version 1.0.0</Text>
+      <Text style={styles.version}>Testing...</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -17,16 +17,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#fff', // White background
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#FFFFFF',
   },
   version: {
     fontSize: 16,
-    color: '#666',
+    color: '#FFFFFF',
     marginTop: 8,
   },
 });

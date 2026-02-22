@@ -27,9 +27,6 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "scheme": "compraja",
-    "plugins": [
-      "expo-router"
-    ]
+    "scheme": "compraja"
   }
 }
